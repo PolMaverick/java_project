@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입 사이트입니다.</title>
+</head>
+<body>
+<form action="insert.jsp"> <!-- jsp에 보내주기 -->
+	ID: <input name = "id"> <br>
+	PW: <input name = "pw"> <br>
+	이름: <input name = "name"> <br>
+	전화번호: <input name = "tel"> <br>
+<button type="submit">회원가입 처리</button> <!-- 데이터를 받아서 바로 db로 못보내기 때문에 java가 필요해서 static(모든 사람에게 똑같이 보이는 페이지. html만으로 충분)한 페이지가 아닌 dynamic(유저가 입력한 것에 따라 다르게 나오는 페이지. 언어가 필요하다) 페이지다 -->
+</form>
+</body>
+</html>
