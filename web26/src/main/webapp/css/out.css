@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+body{
+	color: white;
+}
+
+a{
+	background: pink;
+	text-decoration: none;
+	color: red;
+}
+
+a:hover{ /* 마우스를 a태그에 올렸을 떄 스타일 지정 */
+	background: red;
+	text-decoration: line;
+	color: white;
+}
+
+#total{ /* #은 id */
+	width: 800px;
+	height: 800px;
+	background: lime;
+}
+
+#top{
+	width: 800px;
+	height:100px;
+	background: aqua;
+}
+
+#top2{
+	width: 300px;
+	height: 100px;
+	background: black;
+	color: white;
+	position: fixed; /* 스크롤을 내려도 고정되어있다 */
+	top: 5px; /* 고정되어있는 위치 */
+	right: 5px;
+	border-radius: 100px 0px 100px 0px;
+}
+
+#center{
+	width: 800px;
+	height: 500px;
+	background: url("../img/12345.jpg"); /* ../은 지금 파일들어있는 폴더에서 나간다는 뜻 */
+}
+
+li {
+	list-style: none; /* 목록 앞 점이 사라짐 */
+	float: left;
+	font-size: 25px;
+	background: orange;
+	padding: 10px; /* 글자 사이 여백주기 */
+	margin: 5px; /* 여백과 여백 사이도 띄우기 */
+}
+
+li:nth-child(2n+1){ /* 홀수. 짝수는 2n */
+	background: yellow;
+}
+
+li:hover { /* 마우스를 올렸을 떄 효과를 주고 싶을 때 */
+	list-style: none; /* 목록 앞 점이 사라짐 */
+	float: left;
+	font-size: 25px;
+	background: pink;
+	padding: 10px; /* 글자 사이 여백주기 */
+	margin: 5px; /* 여백과 여백 사이도 띄우기 */
+	border-radius: 30px;
+}
