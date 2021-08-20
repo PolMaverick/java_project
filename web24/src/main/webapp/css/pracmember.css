@@ -1,0 +1,42 @@
+@charset "UTF-8";
+#data{ /* 선택:아이디 */ /* 선택자 3종류 - 태그, 클래스, id */
+	font-style: italic;
+}
+
+/* css는 순서 상관 없음 */
+input {
+	font-size: 40px;
+	height: 100px;
+}
+
+body { /* 선택: 태그 */
+	color: blue;
+	font-size: 40px;
+}
+
+/* .class명 은 태그가 아님 */
+.left{ /* 선택: 클래스 - 그룹을 지어서 여러개를 동일한 효과를 주고자 하는 경우 */
+	background: yellow;
+	height: 100px;
+	width: 200px;
+	text-align: center;
+}
+
+.right{
+	width: 300px; /* css에서 스타일을 줄 때 숫자로 지정하는 경우는 반드시 px를 붙여줘야 한다. */
+	background: fuchsia;
+}
+
+.bottom {
+	background: maroon;
+	text-align: center;
+	height: 100px;
+
+}
+
+button {
+	background: red;
+	color: white;
+	font-weight: bold;
+	font-size: 40px;
+}
