@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Order Form</title>
+	</head>
+	<body>
+		<h3>주문 입력창</h3>
+		<hr color="black">
+		
+		<form action="ainsert3.jsp">
+		제목 : <input name="title" type="text"> <br>
+		요구사항:
+			<textarea rows="7" cols="30" placeholder="여기에 입력해주세요" name="demand"></textarea><br>
+		주문자 이름 : <input name="name" type="text"> <br>
+		연락처 : 
+			<select name="com">
+				<option value="010">010
+				<option value="011">011
+				<option value="017">017
+				<option value="018">018
+				<option value="019">019
+			</select>
+			<input name="tel" type="text"> <br>
+		소리:
+			<input type="radio" name="sound" value="yes">유
+			<input type="radio" name="sound" value="no">무<br>
+		옵션: <input type="checkbox" name="option" value="sub">자막
+		     <input type="checkbox" name="option" value="effect">효과
+		     <input type="checkbox" name="option" value="edit">편집<br>
+			<button type="submit">주문</button>
+		</form>
+	</body>
+</html>

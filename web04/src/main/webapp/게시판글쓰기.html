@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>게시판 글쓰기</title>
+	</head>
+	<body>
+		<h3>게시판 글쓰기</h3>
+		<hr color="red">
+		
+		<form action="insert2.jsp">
+		제목 : <input name="title" type="text" placeholder="제목을 입력해주세요"> <br>
+		글쓴이 : <input name="author" type="text" placeholder="글쓴이를 입력해주세요"> <br>
+		내용 : <textarea rows="8" cols="80" placeholder="내용을 입력해주세요" name="text"></textarea><br>
+		종류:
+			<input type="radio" value="inquiry" name="category">문의사항
+			<input type="radio" value="reply" name="category">답변
+			<input type="radio" value="confirm" name="category">확인<br>
+		부서 : 
+			<select name="dep">
+				<option value="planning">기획부
+				<option value="general">총무부
+				<option value="hr">인사부
+			</select><br>
+		날짜 : <input name="days" type="text" placeholder="yymmdd로 숫자 입력"> <br>
+			<button type="submit">게시판 글쓰기</button>
+		</form>
+	</body>
+</html>
